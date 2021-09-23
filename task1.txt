@@ -1,0 +1,27 @@
+DDL(Data Definition Language) – deals with DB schemas and descriptions of data in this DB. It deals with residing of data in the DB. Examples are CREATE, RENAME, ALTER, etc.
+Example of CREATE:
+CREATE DATABASE work;
+or
+CREATE TABLE student(
+student_id INT PRIMARY KEY AUTO_INCREMENT,
+full_name VARCHAR(50) NOT NULL
+);
+
+Example of RENAME:
+RENAME TABLE student TO graduates;
+
+Example of ALTER:
+ALTER TABLE students ADD COLUMN gpa NUMERIC(3, 2) NOT NULL CHECK(gpa<=4.00);
+
+DML(Data Manipulation Language) – deals with managing/manipulating data in the DB. It is about updating, storing, retrieving, deleting, and modifying data in our DB. Examples are UPDATE, SELECT, INSERT, DELETE, CALL, LOCK TABLE, etc.
+Example of UPDATE:
+UPDATE student SET full_name =’Orazgali Amina Yerbolatkyzy’ WHERE student_id=’3’;
+
+Example of SELECT:
+SELECT * FROM student;
+
+Example of INSERT:
+INSERT INTO student(full_name, gpa) VALUES (‘Yerbolat Asiya Yerassylkyzy’, ‘4.00’);
+
+Example DELETE:
+DELETE FROM student WHERE full_name=’ ’Orazgali Amina Yerbolatkyzy’;
